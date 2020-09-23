@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/anneKoethke/Webpack_TS/issues"
   },
-  "homepage": "https://github.com/anneKoethke/Webpack_TS#readme"
+  "homepage": "https://github.com/anneKoethke/Webpack_TS#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^8.0.4",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
 }

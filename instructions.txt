@@ -21,3 +21,7 @@ Webpack + TS without any other libs (React, Angular etc.)
 
 3) init package.json to track dependencies
 -> Terminal: npm init (then click through)
+
+4) get Webpack
+-> Terminal: npm i webpack webpack-cli ts-loader -D
+( -D === save to Dev Dependencies)
