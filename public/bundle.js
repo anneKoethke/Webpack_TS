@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "public";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -86,15 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/forms.ts":
+/*!**********************!*\
+  !*** ./src/forms.ts ***!
+  \**********************/
+/*! exports provided: formData */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"formData\", function() { return formData; });\nconst formData = (form) => {\r\n    const inputs = form.querySelectorAll('input');\r\n    let values = {};\r\n    inputs.forEach(input => {\r\n        values[input.id] = input.value;\r\n    });\r\n    return values;\r\n};\r\n\n\n//# sourceURL=webpack:///./src/forms.ts?");
+
+/***/ }),
+
 /***/ "./src/index.ts":
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\r\nconsole.log(\"hello\");\r\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _forms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./forms */ \"./src/forms.ts\");\n\r\nconst form = document.querySelector('form');\r\nform.addEventListener('submit', (e) => {\r\n    e.preventDefault(); // page won't reload\r\n    const data = Object(_forms__WEBPACK_IMPORTED_MODULE_0__[\"formData\"])(form); // data here is the returned values from forms.ts\r\n    console.log(data);\r\n});\r\n\n\n//# sourceURL=webpack:///./src/index.ts?");
 
 /***/ })
 

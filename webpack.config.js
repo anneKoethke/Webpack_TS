@@ -12,6 +12,10 @@ module.exports = {
       }
     ]
   },
+  // resolve modules via extension
+  resolve: {
+    extensions: ['.ts', '.js']
+  },
   output: {
     publicPath: 'public',
     filename: 'bundle.js', // bundled output file

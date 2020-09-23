@@ -44,3 +44,8 @@ Webpack + TS without any other libs (React, Angular etc.)
 
 8+++) Server recompiles, but doesn't rebundle:
 -> in ./webpack.config.js add to output: 'publicPath: 'public','
+
+8++++) to resolve imports without extensions, add:
+-> webpack-config.js: resolve: {extensions: ['.ts', '.js']},
+
+!!! whenever the webpack.cofig is changed, the live sver must be stopped and resvered
