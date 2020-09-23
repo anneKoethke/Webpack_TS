@@ -1,6 +1,7 @@
 const path = require('path'); // to get absolute paths
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.ts', // entry file, though all in the directory is beeing bundled
   module: {
     rules: [ // rule: take a .ts file and make .js file
@@ -12,6 +13,7 @@ module.exports = {
     ]
   },
   output: {
+    publicPath: 'public',
     filename: 'bundle.js', // bundled output file
     path: path.resolve(__dirname, 'public'), // needs to be an absolute path -> const path = require('path') handles this
   }, 

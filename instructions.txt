@@ -36,3 +36,11 @@ Webpack + TS without any other libs (React, Angular etc.)
 8+) add code to index.ts 
 -> add '"build": "webpack",' to 'scripts' in package.json 
 -> Terminal: npm run build
+
+8++) webpack dev server package (-> live reload local dev server) 
+-> Terminal: npm i webpack-dev-server -D
+-> package.json: add '"serve": "webpack-dev-server",' to the scripts'
+-> Terminal: npm run serve
+
+8+++) Server recompiles, but doesn't rebundle:
+-> in ./webpack.config.js add to output: 'publicPath: 'public','
