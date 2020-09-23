@@ -1,6 +1,10 @@
-first steps..
+FIRST STEPS 
 
-1) setup stuff for version conrtoll
+Webpack + TS without any other libs (React, Angular etc.)
+
+0) have node, typescript (npm i -g typescript)
+
+1) setup stuff for version conrtol
 -> make a local folder
 -> gitHub: new Repo (wiht nothing added, same name as local folder)
 -> Terminal: git init
@@ -11,4 +15,9 @@ first steps..
 -> Terminal: git branch -M master
 -> Terminal: git push -u origin master
 
-2) 
+2) init and change tsconfig
+-> Terminal: tsc --init
+-> in tsconfig: "target": "es6", "module": "es2015"
+
+3) init package.json to track dependencies
+-> Terminal: npm init (then click through)
