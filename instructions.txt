@@ -33,19 +33,24 @@ Webpack + TS without any other libs (React, Angular etc.)
 
 7) create and configure ./webpack.config.js (using the node module system) 
 
-8+) add code to index.ts 
+8) add code to index.ts 
 -> add '"build": "webpack",' to 'scripts' in package.json 
 -> Terminal: npm run build
 
-8++) webpack dev server package (-> live reload local dev server) 
+9) webpack dev server package (-> live reload local dev server) 
 -> Terminal: npm i webpack-dev-server -D
 -> package.json: add '"serve": "webpack-dev-server",' to the scripts'
 -> Terminal: npm run serve
 
-8+++) Server recompiles, but doesn't rebundle:
+10) Server recompiles, but doesn't rebundle:
 -> in ./webpack.config.js add to output: 'publicPath: 'public','
 
-8++++) to resolve imports without extensions, add:
+11) to resolve imports without extensions, add:
 -> webpack-config.js: resolve: {extensions: ['.ts', '.js']},
+
+12) to get to the TS instead of the js bundle, when watching in Live Server (NOT webpack dev server)
+-> tsconfig: "sourceMap": true, 
+-> webpack.config: devtool: 'eval-source-map',
+
 
 !!! whenever the webpack.cofig is changed, the live sver must be stopped and resvered

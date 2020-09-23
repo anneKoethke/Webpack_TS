@@ -1,7 +1,8 @@
 const path = require('path'); // to get absolute paths
 
 module.exports = {
-  mode: 'development',
+  devtool: 'eval-source-map', // helps source map; eval quicker, use 'source-map' in production
+  mode: 'development', // change to production when finished
   entry: './src/index.ts', // entry file, though all in the directory is beeing bundled
   module: {
     rules: [ // rule: take a .ts file and make .js file
