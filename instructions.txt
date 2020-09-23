@@ -30,3 +30,5 @@ Webpack + TS without any other libs (React, Angular etc.)
 -> Terminal:  npm i typescript -D
 
 6) create folder structure: ./src/index.ts and ./public/index.html (or dist)
+
+7) create and configure ./webpack.config.js (using the node module system) 
