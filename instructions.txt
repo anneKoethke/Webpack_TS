@@ -22,6 +22,9 @@ Webpack + TS without any other libs (React, Angular etc.)
 3) init package.json to track dependencies
 -> Terminal: npm init (then click through)
 
-4) get Webpack
+4) get Webpack, Webpack CLI, TS-Loader
 -> Terminal: npm i webpack webpack-cli ts-loader -D
 ( -D === save to Dev Dependencies)
+
+5) also install TS locally (though already globally installed) to make it work better with Webpack
+-> Terminal:  npm i typescript -D
