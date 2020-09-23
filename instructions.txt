@@ -32,3 +32,7 @@ Webpack + TS without any other libs (React, Angular etc.)
 6) create folder structure: ./src/index.ts and ./public/index.html (or dist)
 
 7) create and configure ./webpack.config.js (using the node module system) 
+
+8+) add code to index.ts 
+-> add '"build": "webpack",' to 'scripts' in package.json 
+-> Terminal: npm run build
