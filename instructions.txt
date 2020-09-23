@@ -28,3 +28,5 @@ Webpack + TS without any other libs (React, Angular etc.)
 
 5) also install TS locally (though already globally installed) to make it work better with Webpack
 -> Terminal:  npm i typescript -D
+
+6) create folder structure: ./src/index.ts and ./public/index.html (or dist)
