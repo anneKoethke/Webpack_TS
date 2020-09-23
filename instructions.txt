@@ -1,1 +1,14 @@
 first steps..
+
+1) setup stuff for version conrtoll
+-> make a local folder
+-> gitHub: new Repo (wiht nothing added, same name as local folder)
+-> Terminal: git init
+-> Terminal: git add .
+-> Terminal: git commit -m "First commit"
+-> Terminal: git remote add origin remote repository URL
+-> Terminal: git remote -v
+-> Terminal: git branch -M master
+-> Terminal: git push -u origin master
+
+2) 
